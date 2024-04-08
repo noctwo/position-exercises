@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+body{
+    background-image: url(../img/everest-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    font-family: "Poppins-Bold";
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+p{
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    font-family: "Poppins-Regular";
+    color: #fff;
+    font-size: 2rem;
+}
