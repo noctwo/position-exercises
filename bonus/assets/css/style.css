@@ -17,7 +17,7 @@ nav{
     top: 0;
 }
 
-ul{
+nav ul{
     display: flex;
     list-style: none;
     gap: 1em;
@@ -26,12 +26,13 @@ ul{
 .hero{
     background-image: url(../img/hero-bg-1.jpg);
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    height: 60vh;
 }
 
 h1, p{
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 20%;
     font-size: 3rem;
     text-transform: uppercase;
@@ -39,19 +40,45 @@ h1, p{
 }
 
 p{
-    top: 45%;
+    top: 25%;
     left: 20%;
     font-size: 1.5rem;
 }
 
-.gallery{
+.gallery-items{
     display: flex;
     flex-wrap: wrap;
     width: 80vw;
     margin: 3em auto;
     gap: 2em;
+    padding: 5em 0;
 }
 
 .gallery img{
     max-width: 30%;
+}
+
+.tour-dates{
+    text-align: center;
+    padding: 5em 0;
+}
+
+.tour-dates li::after{
+    font-weight: bold;
+    color: red;
+    content: " SOLD OUT";
+}
+
+.tour-dates li:nth-child(5)::after{
+    font-weight: light;
+    color: green;
+    content: " Still Available";
+    cursor: pointer;
+}
+
+.tour-dates li:nth-child(6)::after{
+    font-weight: light;
+    color: green;
+    content: " Still Available";
+    cursor: pointer;
 }
